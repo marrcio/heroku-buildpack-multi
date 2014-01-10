@@ -3,7 +3,7 @@
 if [ -z "$OVERLAY" ]; then
   echo "'OVERLAY' environment variable not set, aborting..."
   exit 1
-elif [ ! -f $1/.buildpacks ] && [ ! -f $1/.buildpacks.$OVERLAY ] ; then
+elif [ ! -f $1/.buildpacks ] && [ ! -f $1/.buildpacks.$OVERLAY ]; then
   echo "no .buildpacks neither .buildpacks.overlay-string file"
   exit 1
 else
