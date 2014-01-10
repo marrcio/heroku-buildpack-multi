@@ -24,7 +24,7 @@ echo "-----> Overlaying '*.$OVERLAY' over repository root"
 
 cd $BUILD_DIR
 
-for from in *.$OVERLAY bin/*.$OVERLAY; do
+for from in *.$OVERLAY .*.$OVERLAY bin/*.$OVERLAY; do
   to=${from/%.$OVERLAY/}
   echo "copying '$from' to '$to'" | indent
   cp $from $to
