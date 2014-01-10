@@ -5,7 +5,7 @@ Use multiple buildpacks on your app, with support to custom files for each proje
 ## Usage
 
     $ heroku config:add BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi-overlay.git --app YOURAPP
-    $ heroku config:add OVERALY="app-extension"
+    $ heroku config:add OVERLAY="app-extension"
 
     $ ls *.app-extension
     Procfile.app-extension  requirements.txt.app-extension  .buildpack.app-extension
