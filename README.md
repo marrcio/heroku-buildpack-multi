@@ -1,6 +1,7 @@
 # heroku-buildpack-multi
 
 Use multiple buildpacks on your app, with support to custom files for each project using overlay.
+A fusion of https://github.com/projetoeureka/heroku-overlay and https://github.com/projetoeureka/heroku-overlay
 
 ## Usage
 
