@@ -1,16 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Mamma Mia!"
+echo "Heroku Overlay-Multi: a way to work with multiple apps and buildpacks in the same repository, "
 exit 0
 
-if [ -z "$OVERLAY" ]; then
-  echo "'OVERLAY' environment variable not set, aborting..."
-  exit 1
-elif [ ! -f $1/.buildpacks ] && [ ! -f $1/.buildpacks.$OVERLAY ]; then
-  echo "no .buildpacks neither .buildpacks.overlay-string file"
-  exit 1
-else
-  echo "Heroku Overlay-Multi: a way to work with multiple apps and buildpacks in the same repository"
-  exit 0
-fi
 
