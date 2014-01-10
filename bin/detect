@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+echo "Mamma Mia!"
+exit 0
+
 if [ -z "$OVERLAY" ]; then
   echo "'OVERLAY' environment variable not set, aborting..."
   exit 1
